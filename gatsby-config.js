@@ -1,7 +1,7 @@
-require(`dotenv`).config()
+require(`dotenv`).config();
 
-const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
-const googleAnalyticsTrackingId = process.env.GOOGLE_ANALYTICS_ID
+const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
+const googleAnalyticsTrackingId = process.env.GOOGLE_ANALYTICS_ID;
 
 module.exports = {
   siteMetadata: {
@@ -25,13 +25,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `DaoCode - SoftWare development`,
+        name: `Cara - @lekoarts/gatsby-theme-cara`,
         short_name: `DaoCode`,
         description: `GLOBAL TECH PARTNER FOR DIGITAL TRANSFORMATION AND SOFTWARE INNOVATION`,
         start_url: `/`,
         background_color: `#141821`,
         theme_color: `#f6ad55`,
-        display: `standalone`,        
+        display: `standalone`,
       },
     },
     `gatsby-plugin-offline`,
@@ -46,4 +46,4 @@ module.exports = {
       },
     },
   ].filter(Boolean),
-}
+};
